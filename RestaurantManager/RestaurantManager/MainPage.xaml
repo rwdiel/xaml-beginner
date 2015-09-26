@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="RestaurantManager.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RestaurantManager"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.4*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="title" Text="Restaurant Manager" 
+                   Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                   HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <TextBlock x:Name="subTitle" Text="Internal Test Version" 
+                   Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+                   HorizontalAlignment="Center" VerticalAlignment="Bottom"
+                   FontSize="20"/>
+        <TextBlock x:Name="ordersView" Text="**Get to Orders View**" 
+                   Grid.Row="2" Grid.Column="0"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock x:Name="submitOrder" Text="**Submit Order**" 
+                   Grid.Row="2" Grid.Column="1"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+    </Grid>
+</Page>
