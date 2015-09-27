@@ -7,7 +7,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <Page.TopAppBar>
+        <AppBar>
+            <AppBarButton Icon="Home" Label="Home" Click="MainPage_Click" />
+        </AppBar>
+    </Page.TopAppBar>
+
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.5*"/>
             <ColumnDefinition Width="0.25*"/>
@@ -26,12 +33,17 @@
         <TextBlock x:Name="orderItems" Text="Order Items:" 
                    Grid.Row="1" Grid.Column="2"
                    HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <TextBlock x:Name="addToOrder" Text="**Add to Order**" 
+        <Button x:Name="addToOrder" Content="Add to Order" 
                    Grid.Row="4" Grid.Column="0"
                    HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock x:Name="submitOrder" Text="**Submit Order**" 
+        <Button x:Name="submitOrder" Content="Submit Order" 
                    Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"
                    HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <ListView Grid.Row="1" Grid.Column="0" Grid.RowSpan="3"
+                  Margin="10"/>
+        <ListView Grid.Row="2" Grid.Column="2" Grid.RowSpan="2"
+                  Margin="10"/>
+
 
     </Grid>
 </Page>

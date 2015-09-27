@@ -24,12 +24,12 @@
                    Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
                    HorizontalAlignment="Center" VerticalAlignment="Bottom"
                    FontSize="20"/>
-        <TextBlock x:Name="ordersView" Text="**Get to Orders View**" 
+        <Button Content="Get to Orders View" 
                    Grid.Row="2" Grid.Column="0"
-                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <TextBlock x:Name="submitOrder" Text="**Submit Order**" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center" Click="ExpeditePage_Click"/>
+        <Button Content="Submit Order" 
                    Grid.Row="2" Grid.Column="1"
-                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                   HorizontalAlignment="Center" VerticalAlignment="Center" Click="OrderPage_Click"/>
 
     </Grid>
 </Page>
